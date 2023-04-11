@@ -86,7 +86,7 @@
         text-align: center;
         max-width: 100%;
         height: 90vh;
-        padding-top: 10vh;
+        padding-top: 20vh;
     }
 
     .aboutText {
@@ -95,6 +95,7 @@
     }
 
     .aboutContainer {
+        gap: 20px;
         max-width: 90%;
         flex-direction: column;
     }
