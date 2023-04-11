@@ -26,6 +26,6 @@
 
 @media only screen and (max-width: 1000px) {
     .navbarContainer {
-       //display: none;
+       display: none;
     }
 }
