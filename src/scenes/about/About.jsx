@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './About.module.css'
-import aboutSmall from '../../assets/about-small.png'
-import aboutAnimation from '../../assets/aboutAnimation.svg'
+import aboutSmall from "../../assets/about-small.png"
+import aboutAnimation from "../../assets/aboutAnimation.svg"
 
 const About = () => {
     return (

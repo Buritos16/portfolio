@@ -3,7 +3,7 @@ import s from './Home.module.css'
 import {ImLinkedin, ImGithub} from 'react-icons/im'
 import {IoLogoHtml5, IoLogoCss3, IoLogoNodejs} from 'react-icons/io'
 import {SiJavascript, SiReact, SiRedux, SiExpress, SiMongodb, SiGit, SiTypescript} from 'react-icons/si'
-import me from '../../assets/me.JPG'
+import me from "../../assets/me.JPG"
 
 const Home = () => {
     return (
