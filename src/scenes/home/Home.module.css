@@ -142,15 +142,20 @@
     color: yellow;
 }
 
+.subtitle {
+    font-size: 1.2rem;
+    color: #58595d;
+}
+
 @media only screen and (max-width: 1000px) {
     .home {
-        height: 100vh;
-        margin-top: 70px;
+        max-width: 100%;
+        min-height: 100vh;
         justify-content: flex-end;
-        padding: 0 2rem;
     }
 
     .homeContainer {
+        width: 90%;
         gap: 3rem;
         max-width: 100%;
     }
@@ -158,11 +163,11 @@
     .homeDiv {
         flex-direction: column;
         gap: 0;
-        height: fit-content;
+        max-width: 100%;
     }
 
     .right, .left {
-        height: fit-content;
+        max-width: 100%;
         text-align: center;
         align-items: center;
         width: 100%;
@@ -174,12 +179,12 @@
     }
 
     .animation {
+        max-width: 100%;
         width: 50%;
-        height: fit-content;
     }
 
     .me {
-        width: 100%;
+        max-width: 100%;
     }
 
     .left {
@@ -187,7 +192,12 @@
     }
 
     .title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+        max-width: 100%;
+    }
+
+    .hand {
+        width: 2.3rem;
     }
 
     .stack {
@@ -209,7 +219,11 @@
         font-size: 1.5rem;
         gap: 2rem;
     }
+
     .links {
         font-size: 2.5rem;
+    }
+    .subtitle {
+        width: 90%;
     }
 }

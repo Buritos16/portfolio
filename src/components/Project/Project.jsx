@@ -7,7 +7,7 @@ const Project = ({demo, title, subtitle, image, mainTech, additionalTech, github
     return (
         <div className={additionalStyle ? s.additionalStyle : s.project}>
             <div className={s.left}>
-                <a href={demo}>
+                <a href={demo} >
                     <div className={s.demo}/>
                 </a>
             </div>

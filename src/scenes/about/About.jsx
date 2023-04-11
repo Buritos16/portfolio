@@ -15,7 +15,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{display: "flex", flexDirection: "column", justifyContent: 'space-between', height: '20rem'}}>
+                <div className={s.aboutText}>
                     <div style={{fontSize: 16, fontWeight: 900, color: '#ff4d30'}}>
                         ABOUT ME
                     </div>

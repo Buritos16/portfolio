@@ -104,11 +104,15 @@
 
 @media only screen and (max-width: 1000px) {
     .project, .additionalStyle {
+        width: 90%;
         flex-direction: column;
         gap: 1.5rem;
     }
     .left, .right {
         width: 100%;
+    }
+    .left {
+        height: 30vh;
     }
     .right {
         gap: 1.5rem;
@@ -116,7 +120,7 @@
     .right p {
         margin: 0;
     }
-    .additionalStyle {
-        flex-direction: column;
+    .subtitle {
+        padding: 0;
     }
 }

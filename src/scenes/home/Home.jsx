@@ -25,7 +25,7 @@ const Home = () => {
                             </div>
 
                         </div>
-                        <div style={{fontSize: 20, color: '#58595d'}}>
+                        <div className={s.subtitle}>
                             Hi, I'm Roman Typylo. A passionate Front-end React Developer based in Ternopil,
                             Ukraine. <img style={{width: '1rem'}}
                                           src='https://em-content.zobj.net/thumbs/160/apple/354/round-pushpin_1f4cd.png'
