@@ -8,7 +8,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         <nav className={s.navbarContainer}>
             <div className={s.navbar}>
                 <div className={s.navbarLine}>
-                    <div>
+                    <div className={s.logo}>
                         Buritos
                     </div>
                     <div className={s.navbarLineItem}>

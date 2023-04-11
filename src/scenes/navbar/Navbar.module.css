@@ -24,8 +24,19 @@
     gap: 20px
 }
 
+
 @media only screen and (max-width: 1000px) {
-    .navbarContainer {
-       display: none;
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        display: none;
+    }
+    .navbarLine {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: fit-content;
     }
 }
