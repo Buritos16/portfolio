@@ -1,0 +1,31 @@
+.navbar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: 700;
+    z-index: 30;
+    //background-color: rgba(0,0,0,.05);
+
+}
+
+.navbarLine {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.navbarLineItem {
+    display: flex;
+    gap: 20px
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbarContainer {
+       //display: none;
+    }
+}

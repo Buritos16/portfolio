@@ -1,0 +1,122 @@
+.project, .additionalStyle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 1.7rem;
+    align-items: center;
+}
+
+.additionalStyle {
+    flex-direction: row-reverse;
+}
+
+.left {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    background-color: hsla(0,0%,46%,.2);
+    border-radius: 1.2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.right {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    justify-content: space-between;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.subtitle {
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #58595d;
+}
+
+.mainTech, .additionalTech {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tech {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+    font-weight: 900;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.links {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.linkProject {
+    display: flex;
+    gap: 5px;
+    transition-duration: 0.3s;
+}
+
+.linkProject:hover {
+    color: #ff4d30;
+    transition-duration: 0.3s;
+}
+
+.techContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.demo {
+    height: 400px;
+    width: auto;
+    transition: ease-in-out 8s;
+
+    background: url("../../assets/demo.webp ") center top;
+    background-size: cover;
+}
+
+.demo:hover {
+    background-position: bottom;
+}
+
+.leftToRight {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project, .additionalStyle {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .right {
+        gap: 1.5rem;
+    }
+    .right p {
+        margin: 0;
+    }
+    .additionalStyle {
+        flex-direction: column;
+    }
+}

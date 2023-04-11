@@ -1,0 +1,99 @@
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutContainer {
+    max-width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.aboutBackground {
+    height: 20rem;
+    z-index: 1;
+    background-image: url("../../assets/about2.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 30rem;
+    border-radius: 30px;
+    position: relative;
+}
+
+.aboutSmall {
+    width: 4rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 5;
+}
+
+.animationBackground {
+    width: 12rem;
+    position: absolute;
+    right: -2.1rem;
+    bottom: -2.1rem;
+    background: #F8F4EB;
+    border-radius: 50%;
+}
+
+.aboutAnimation {
+    width: 100%;
+    -webkit-animation: rotate-center 9s linear infinite both;
+    animation: rotate-center 9s linear infinite both;
+}
+
+.aboutAnimation:hover {
+    animation-play-state:  paused;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about{
+        padding: 0 2rem;
+        text-align: center;
+    }
+    .aboutContainer {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .aboutAnimationContainer {
+        width: 100%;
+    }
+    .aboutBackground {
+        width: 100%;
+    }
+    .animationBackground {
+        width: 30%;
+    }
+    .aboutSmall {
+        width: 2rem;
+        display: none;
+    }
+
+}
