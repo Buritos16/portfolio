@@ -151,7 +151,7 @@
     .home {
         max-width: 100%;
         min-height: 95vh;
-        height: 95vh;
+        height: 100vh;
         justify-content: flex-end;
     }
 
@@ -216,7 +216,8 @@
     }
 
     .links {
-        font-size: 1.7rem;
+        margin: 20px 0;
+        font-size: 2rem;
     }
     .subtitle {
         width: 90%;
