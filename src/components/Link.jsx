@@ -1,7 +1,7 @@
 import React from 'react'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
+const Link = ({ page, selectedPage, setSelectedPage, setIsMenuToggled }) => {
 
     const lowerCasePage = page.toLowerCase().replace(/ /g, "");
 
@@ -9,7 +9,10 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
         <AnchorLink
             className={selectedPage === lowerCasePage ? 'selectedPage' : ''}
             href={`#${lowerCasePage}`}
-            onClick={() => setSelectedPage(lowerCasePage)}
+            onClick={() => {
+                setSelectedPage(lowerCasePage)
+                if(setIsMenuToggled) setIsMenuToggled(false)
+            }}
         >
             {page}
         </AnchorLink>

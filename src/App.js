@@ -14,8 +14,6 @@ function App() {
         const handleScroll = () => {
             if (window.scrollY === 0) {
                 setSelectedPage('home');
-            } else if (window.scrollY === window.innerHeight) {
-                setSelectedPage('about');
             }
         };
         window.addEventListener("scroll", handleScroll);
@@ -31,10 +29,10 @@ function App() {
                     setSelectedPage={setSelectedPage}
                 />
 
-                <Home/>
-                <About/>
-                <Projects/>
-                <Contact/>
+                <Home setSelectedPage={setSelectedPage}/>
+                <About setSelectedPage={setSelectedPage}/>
+                <Projects setSelectedPage={setSelectedPage}/>
+                <Contact setSelectedPage={setSelectedPage}/>
             </div>
         </div>
     );

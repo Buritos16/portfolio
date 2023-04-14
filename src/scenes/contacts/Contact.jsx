@@ -1,12 +1,17 @@
 import React from 'react'
 import s from './Contact.module.css'
+import {motion} from "framer-motion";
 import {MdMyLocation} from 'react-icons/md'
 import {IoMdMail} from 'react-icons/io'
 import {BsTelegram} from 'react-icons/bs'
 
-const Contact = () => {
+const Contact = ({setSelectedPage}) => {
     return (
-        <div id='contacts' className={s.contacts}>
+        <motion.div
+            id='contacts'
+            className={s.contacts}
+            onViewportEnter={() => setSelectedPage('contacts')}
+        >
             <div className={s.contactsTitle}>
                 <div style={{fontSize: 16, fontWeight: 900, color: '#ff4d30'}}>
                     CONTACTS
@@ -62,7 +67,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default Contact

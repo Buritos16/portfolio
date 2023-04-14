@@ -1,11 +1,15 @@
 import React from 'react'
 import s from './Project.module.css'
+import {motion} from "framer-motion";
 import {ImGithub} from 'react-icons/im'
 import {BiLinkExternal} from 'react-icons/bi'
 
-const Project = ({demo, title, subtitle, image, mainTech, additionalTech, github, vercel, additionalStyle}) => {
+const Project = ({demo, title, subtitle, image, mainTech, additionalTech, github, vercel, additionalStyle, setSelectedPage}) => {
     return (
-        <div className={additionalStyle ? s.additionalStyle : s.project}>
+        <motion.div
+            className={additionalStyle ? s.additionalStyle : s.project}
+            onViewportEnter={() => setSelectedPage('projects')}
+        >
             <div className={s.left}>
                 <a href={demo} >
                     <div className={s.demo}/>
@@ -40,7 +44,7 @@ const Project = ({demo, title, subtitle, image, mainTech, additionalTech, github
                     <a href={vercel} className={s.linkProject}>Live Demo <BiLinkExternal/></a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default Project

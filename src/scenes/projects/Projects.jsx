@@ -1,12 +1,13 @@
 import React from 'react'
 import s from './Projects.module.css'
+import {motion} from "framer-motion";
 import Project from "../../components/Project/Project";
 
-const Projects = () => {
+const Projects = ({setSelectedPage}) => {
 
     return (
         <div id='projects' className={s.projects}>
-            <div className={s.projectsContainer}>
+            <motion.div className={s.projectsContainer} onViewportEnter={() => setSelectedPage('projects')}>
                 <div className={s.projectsTitle}>
                     <div style={{fontSize: 16, fontWeight: 900, color: '#ff4d30'}}>
                         PROJECTS
@@ -27,6 +28,7 @@ const Projects = () => {
                         additionalTech={['Tailwind', 'Vite']}
                         github='/'
                         vercel='/'
+                        setSelectedPage={setSelectedPage}
                     />
                     <Project
                         demo='/'
@@ -38,6 +40,7 @@ const Projects = () => {
                         github='/'
                         vercel='/'
                         additionalStyle='leftToRight'
+                        setSelectedPage={setSelectedPage}
                     />
                     <Project
                         demo='/'
@@ -48,6 +51,7 @@ const Projects = () => {
                         additionalTech={['Node.js', 'MongoDB']}
                         github='/'
                         vercel='/'
+                        setSelectedPage={setSelectedPage}
                     />
                     <Project
                         demo='/'
@@ -59,9 +63,10 @@ const Projects = () => {
                         github='/'
                         vercel='/'
                         additionalStyle='leftToRight'
+                        setSelectedPage={setSelectedPage}
                     />
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

@@ -1,12 +1,16 @@
 import React from 'react'
 import s from './About.module.css'
+import {motion} from "framer-motion";
 import aboutSmall from "../../assets/about-small.png"
 import aboutAnimation from "../../assets/aboutAnimation.svg"
 
-const About = () => {
+const About = ({setSelectedPage}) => {
     return (
         <div id='about' className={s.about}>
-            <div className={s.aboutContainer}>
+            <motion.div
+                className={s.aboutContainer}
+                onViewportEnter={() => setSelectedPage('about')}
+            >
                 <div className={s.aboutAnimationContainer}>
                     <div className={s.aboutBackground}>
                         <img className={s.aboutSmall} src={aboutSmall} alt='about-small'/>
@@ -33,7 +37,7 @@ const About = () => {
                         collaborating with cross-functional teams to produce outstanding web applications.
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
