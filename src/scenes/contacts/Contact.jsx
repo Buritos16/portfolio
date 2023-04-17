@@ -16,7 +16,7 @@ const Contact = ({setSelectedPage}) => {
                 <div style={{fontSize: 16, fontWeight: 900, color: '#ff4d30'}}>
                     CONTACTS
                 </div>
-                <div style={{fontSize: 21, fontWeight: 900}}>
+                <div style={{fontSize: 21, fontWeight: 800}}>
                     Don't be shy! Hit me up! <img style={{width: '1.5rem'}}
                                                                        src='https://em-content.zobj.net/thumbs/160/apple/354/backhand-index-pointing-down_light-skin-tone_1f447-1f3fb_1f3fb.png'
                                                                        alt='location'/>
@@ -47,7 +47,7 @@ const Contact = ({setSelectedPage}) => {
                             Mail
                         </div>
                         <div className={s.contactText}>
-                            romatypylo21@gmail.com
+                            <a className={s.link} target='_blank' href='mailto:romatypylo21@gmail.com'>romatypylo21@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ const Contact = ({setSelectedPage}) => {
                             Telegram
                         </div>
                         <div className={s.contactText}>
-                            @Buritoz
+                            <a className={s.link} target='_blank' href='https://t.me/Buritoz'>@Buritoz</a>
                         </div>
                     </div>
                 </div>

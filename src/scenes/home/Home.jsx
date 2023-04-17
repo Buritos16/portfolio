@@ -50,7 +50,7 @@ const Home = ({setSelectedPage}) => {
 
                         </div>
                         <div className={s.subtitle}>
-                            Hi, I'm Roman Typylo. A passionate Front-end React Developer based in Ternopil,
+                            Hi, I'm Roman Typylo. A Front-end React Developer based in Ternopil,
                             Ukraine. <img style={{width: '1rem'}}
                                           src='https://em-content.zobj.net/thumbs/160/apple/354/round-pushpin_1f4cd.png'
                                           alt='location'/>
@@ -75,7 +75,7 @@ const Home = ({setSelectedPage}) => {
                     }}
                 >
                     <div className={s.stackTitle}>
-                        Tech stack
+                        Main stack
                         <div className={s.line}/>
                     </div>
                     <div className={s.techno}>

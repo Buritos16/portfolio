@@ -23,18 +23,18 @@ const About = ({setSelectedPage}) => {
                     <div style={{fontSize: 16, fontWeight: 900, color: '#ff4d30'}}>
                         ABOUT ME
                     </div>
-                    <div style={{fontSize: 21, fontWeight: 900}}>
-                        A dedicated Front-end Developer
-                        based in Ternopil, Ukraine. <img style={{width: '1rem'}}
-                                                         src='https://em-content.zobj.net/thumbs/160/apple/354/round-pushpin_1f4cd.png'
+                    <div style={{fontSize: 21, fontWeight: 800}}>
+                        Front-end Developer who creates Products<img style={{width: '1.2rem', marginLeft: '0.5rem'}}
+                                                         src='https://em-content.zobj.net/thumbs/160/apple/354/package_1f4e6.png'
                                                          alt='location'/>
                     </div>
                     <div style={{fontSize: 16.5, color: '#58595d'}}>As a Junior Front-End Developer, I possess an
-                        impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in
-                        designing and maintaining responsive websites that offer a smooth user experience. My expertise
-                        lies in crafting dynamic, engaging interfaces through writing clean and optimized code and
-                        utilizing cutting-edge development tools and techniques. I am also a team player who thrives in
-                        collaborating with cross-functional teams to produce outstanding web applications.
+                        arsenal of skills in HTML, CSS, JavaScript, React, Redux, and Git. I also had experience with
+                        Node.js, Express, MongoDB and TypeScript. I excel at designing and maintaining responsive
+                        websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging
+                        interfaces through writing clean and optimized code and utilizing cutting-edge development tools
+                        and techniques. I am also a team player who thrives in collaborating with cross-functional teams
+                        to produce outstanding web applications.
                     </div>
                 </div>
             </motion.div>

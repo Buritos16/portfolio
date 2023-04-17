@@ -16,6 +16,23 @@
   color: #ff4d30;
 }
 
+
+.gym {
+  background: url("./assets/gym.png") center top;
+}
+
+.admin {
+  background: url("./assets/admin.png") center top;
+}
+
+.algorax {
+  background: url("./assets/algorax.png") center top;
+}
+
+.bus {
+  background: url("./assets/bus.png") center top;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

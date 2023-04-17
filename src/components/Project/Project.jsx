@@ -4,21 +4,32 @@ import {motion} from "framer-motion";
 import {ImGithub} from 'react-icons/im'
 import {BiLinkExternal} from 'react-icons/bi'
 
-const Project = ({demo, title, subtitle, image, mainTech, additionalTech, github, vercel, additionalStyle, setSelectedPage}) => {
+const Project = ({
+                     demo,
+                     title,
+                     subtitle,
+                     image,
+                     mainTech,
+                     additionalTech,
+                     github,
+                     vercel,
+                     additionalStyle,
+                     setSelectedPage
+                 }) => {
     return (
         <motion.div
             className={additionalStyle ? s.additionalStyle : s.project}
             onViewportEnter={() => setSelectedPage('projects')}
         >
             <div className={s.left}>
-                <a href={demo} >
-                    <div className={s.demo}/>
+                <a href={demo}>
+                    <div className={`${s.demo} ${demo}`}/>
                 </a>
             </div>
             <div className={s.right}>
                 <h3 className={s.title}>
                     {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                    {title} <img style={{width: '1.2rem'}} src={image} alt='title image'/>
+                    {title} <img style={{width: '1.2rem', marginLeft: '0.3rem'}} src={image} alt='title image'/>
                 </h3>
                 <p className={s.subtitle}>
                     {subtitle}
@@ -31,17 +42,17 @@ const Project = ({demo, title, subtitle, image, mainTech, additionalTech, github
                             </div>
                         ))}
                     </div>
-                    <div className={s.additionalTech}>
+                    {additionalTech && <div className={s.additionalTech}>
                         {additionalTech.map((el) => (
                             <div className={s.tech}>
                                 {el}
                             </div>
                         ))}
-                    </div>
+                    </div>}
                 </div>
                 <div className={s.links}>
-                    <a href={github} className={s.linkProject}>Code <ImGithub/></a>
-                    <a href={vercel} className={s.linkProject}>Live Demo <BiLinkExternal/></a>
+                    <a href={github} className={s.linkProject} target='_blank'>Code <ImGithub/></a>
+                    <a href={vercel} className={s.linkProject} target='_blank'>Live Demo <BiLinkExternal/></a>
                 </div>
             </div>
         </motion.div>
