@@ -39,8 +39,8 @@ const Projects = ({setSelectedPage}) => {
                         subtitle='A full-fledged cryptocurrency app, made from scratch, that allows its user to track and/or control local or global flows of cryptocurrency funds, exchange them for fiat funds, and vice versa, make deposits and withdrawals.'
                         mainTech={['React', 'Redux', 'Css']}
                         additionalTech={['Node.js', 'Express', 'MongoDB']}
-                        github='/'
-                        vercel='/'
+                        github='https://github.com/Buritos16/crypto-client'
+                        vercel='https://algorax-7bx4mxk3z-buritos16.vercel.app/'
                         additionalStyle='leftToRight'
                         setSelectedPage={setSelectedPage}
                     />
@@ -51,8 +51,8 @@ const Projects = ({setSelectedPage}) => {
                         subtitle='A complete admin dashboard application. It includes a wide variety of statistics, different charts and tables with data.'
                         mainTech={['React', 'Redux', 'MaterialUI']}
                         additionalTech={['Node.js', 'Express', 'MongoDB']}
-                        github='/'
-                        vercel='/'
+                        github='https://github.com/Buritos16/admin-client'
+                        vercel='https://ecomvision-h27ksl9g7-buritos16.vercel.app/dashboard'
                         setSelectedPage={setSelectedPage}
                     />
                     <Project
